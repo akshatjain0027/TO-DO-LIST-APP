@@ -1,0 +1,82 @@
+body{
+    font-family: cursive;
+    background: #b92b27;  /* fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+#mainTodo{
+    width: 360px;
+    margin: 100px auto;
+    background-color: #f0eaea;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+h1{
+    margin: 0;
+    background-color: rgb(32, 99, 155);
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+#addButton{
+    border: none;
+    background-color: rgb(32, 99, 155);
+    color: white;
+    padding: 0px;
+    font-size: large;
+    margin-top: 8px;
+    float: right;
+}
+#addButton:focus{
+    outline: none;
+}
+input{
+    width: 100%;
+    font-size: 20px;
+    padding: 13px 22px;
+    margin: 0px;
+    background-color: #f0eaea;
+    border: none;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+    background-color: white;
+    border: 3px solid rgb(32, 99, 155);
+}
+ul{
+    padding-left: 0px;
+    margin: 0px 0px;
+}
+li:nth-child(2n){
+    background-color: #f0eaea;
+}
+li{
+    
+    list-style-type: none;
+    color: rgb(32, 32, 32);
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+}
+.delete{
+    text-decoration: line-through;
+    color: gray;
+}
+span{
+    background-color: red;
+    color: white;
+    margin-right: 20px;
+    height: 40px;
+    width: 0;
+    text-align: center;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+} 
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
